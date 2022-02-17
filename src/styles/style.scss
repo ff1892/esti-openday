@@ -1,0 +1,57 @@
+.card {
+  margin: 0;
+  padding-bottom: 35px;
+  font-family: sans-serif;
+  max-width: 300px;
+  border-radius: 10px;
+  border: 1px solid rgba($color: #000000, $alpha: 0.05);
+
+  &:hover {
+    box-shadow: 0 5px 10px 2px rgba(215, 215, 216, 0.4);
+  }
+}
+
+.card__image {
+  width: 100%;
+  border-radius:  10px 10px 0 0;
+}
+
+.card__text-content {
+  padding: 0 10px;
+}
+
+.card__title {
+  margin: 10px 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.card__category {
+  margin: 10px 0 20px;
+  font-size: 15px;
+  padding: 0;
+}
+
+.card__category-text {
+  padding: 5px 15px;
+  background-color: rgb(34, 119, 248);
+  color: white;
+  border-radius: 10px;
+}
+
+.card__text {
+  margin-top: 10px;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.card__link {
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(34, 119, 248);
+
+  &:hover {
+    opacity: 0.8;
+    text-decoration: wavy;
+  }
+}

@@ -1,0 +1,15 @@
+- const iframeSource = "https://docs.google.com/forms/d/e/1FAIpQLSddURcFFOZO64cHrque8W3QETOFCweur3cAdM4xAkrFzLjaOQ/viewform?embedded=true"
+
+mixin enroll()
+  section.main__enroll.enroll
+    h2.enroll__title Записаться на день открытых дверей
+    p.enroll__text
+     | Оставьте свою электронную почту, чтобы не забыть про день открытых дверей. <br>
+     | За день мероприятия мы пришлём напоминание. <br>
+    .enroll__form-container
+      iframe.enroll__form(
+        src= iframeSource
+        frameborder="0"
+        height="558"
+        width="700"
+      ) Загрузка&hellip;

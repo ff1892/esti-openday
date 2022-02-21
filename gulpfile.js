@@ -41,6 +41,10 @@ const path = {
     src: 'src/img/**',
     dest: 'build/img/'
   },
+  svg: {
+    src: 'scr/img/svg/**',
+    dest: 'build/svg'
+  }
 };
 
 export const clean = () => {

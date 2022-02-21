@@ -1,0 +1,6 @@
+- const day = '2022-03-20'
+
+mixin event(time, description)
+  li.event__item.event
+    time.event__time(datetime=`${day}T${time}`)= time
+    p.event__description= description

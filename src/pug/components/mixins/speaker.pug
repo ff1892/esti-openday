@@ -1,0 +1,6 @@
+mixin speaker(image, name, position)
+  li.speakers__list-item.speaker
+    .speaker__container
+      img(src=`img/speakers/${image}` alt=name)
+      p.speaker__name= name
+      p.speaker__position= position

@@ -1,0 +1,40 @@
+- const baseTime = 14
+
+-
+  const eventsData = [
+    {
+      time: `${baseTime}:00`,
+      description: 'Приветственное слово организаторов',
+    },
+    {
+      time: `${baseTime}:05-${baseTime}:35`,
+      description: 'Выступление директора Высшей школы перевода Н.&nbsp;К.&nbsp;Гарбовского.Презентация направлений работы факультета',
+    },
+    {
+      time: `${baseTime}:35-${baseTime}:55`,
+      description: 'Выступление заместителя директора по научной работе О.&nbsp;И.&nbsp;Костиковой. Презентация международной деятельности факультета',
+    },
+    {
+      time: `${baseTime}:55-${baseTime + 1}:05`,
+      description: 'Выступление директора по учебной работе С.&nbsp;Г.&nbsp;Ушакова. об особенностях приема студентов в&nbsp;2022 году.',
+    },
+    {
+      time: `${baseTime + 1}:05-${baseTime + 1}:10`,
+      description: 'Выступление заместителя директора по внеаудиторной работе Ю.&nbsp;Н.&nbsp;Кольцовой о программах довузовской подготовки',
+    },
+    {
+      time: `${baseTime + 1}:10-${baseTime + 1}:15`,
+      description: 'Виртуальная экскурсия по факультету',
+    },
+    {
+      time: `${baseTime + 1}:15-${baseTime + 1}:45`,
+      description: 'Тестирование по иностранным языкам',
+    },
+  ]
+
+mixin events()
+  section.main__events.events
+    h2.events__title Программа
+    ul.events__list
+      each eventItem in eventsData
+        +event(eventItem.time, eventItem.description)

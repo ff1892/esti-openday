@@ -1,0 +1,26 @@
+-
+  const pointsData = [
+    {
+      text: 'о перспективах профессии переводчика в ближайшие годы',
+      icon: 'translators',
+    },
+    {
+      text: 'о новых учебных программах факультета',
+      icon: 'programs',
+    },
+    {
+      text: 'об особенностях поступления на факультет в 2022 году (подача документов, сроки приёмной кампании, проходные баллы, конкурс и стоимость обучения);',
+      icon: 'entrance',
+    },
+    {
+      text: 'о том, чем живет факультет в учебное и в свободное от учёбы время',
+      icon: 'extracur',
+    },
+  ]
+
+mixin points()
+  section.main__points.points
+    h2.points__title На встрече вы узнаете
+    ul.points__list
+      each pointItem in pointsData
+        +point(pointItem.text, pointItem.icon)

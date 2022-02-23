@@ -2,22 +2,22 @@
   const speakersData = [
     {
       img: 'garbovskiy',
-      name: 'Гарбовский Николай Константинович',
+      name: 'Гарбовский<br>Николай Константинович',
       position: 'Директор Высшей школы перевода, профессор, академик РАО',
     },
     {
       img: 'kostikova',
-      name: 'Костикова Ольга Игоревна',
+      name: 'Костикова<br>Ольга Игоревна',
       position: 'Заместитель директора по научной работе, доцент',
     },
     {
       img: 'ushakov',
-      name: 'Ушаков Сергей Геннадьевич',
+      name: 'Ушаков<br>Сергей Геннадьевич',
       position: 'Заместитель директора по учебной работе, доцент',
     },
     {
       img: 'koltsova',
-      name: 'Кольцова Юлия Николаевна',
+      name: 'Кольцова<br>Юлия Николаевна',
       position: 'Заместитель директора по научной работе, доцент',
     }
   ]
@@ -25,7 +25,8 @@
 
 mixin speakers()
   section.main__speakers.speakers
-    h2.speakers__title Спикеры
-    ul.speakers__list
-      each speaker in speakersData
-        +speaker(speaker.img, speaker.name, speaker.position)
+    .container.speakers__container
+      h2.speakers__title Спикеры
+      ul.speakers__list
+        each speaker in speakersData
+          +speaker(speaker.img, speaker.name, speaker.position)

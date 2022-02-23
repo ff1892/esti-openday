@@ -20,7 +20,8 @@
 
 mixin points()
   section.main__points.points
-    h2.points__title На встрече вы узнаете
-    ul.points__list
-      each pointItem in pointsData
-        +point(pointItem.text, pointItem.icon)
+    .container.points__container
+      h2.points__title На встрече вы узнаете
+      ul.points__list
+        each pointItem in pointsData
+          +point(pointItem.text, pointItem.icon)

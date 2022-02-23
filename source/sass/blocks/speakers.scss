@@ -1,0 +1,31 @@
+.speakers__title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.speakers__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.speaker {
+  text-align: center;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: $color-default-grey-30;
+  box-shadow: 0 0 4px -2px $color-default-black-70;
+
+}
+
+.speaker__image {
+  border-radius: 50%;
+  width: 150px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.speaker__name {
+  font-size: 18px;
+}

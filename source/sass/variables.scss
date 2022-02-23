@@ -1,0 +1,24 @@
+// TYPOGRAPHY
+
+$ff-default: 'Open Sans';
+$fz-default: 16px;
+
+// COLORS
+
+$color-default-black: #000000;
+$color-default-white: #ffffff;
+$color-default-grey: #eeeeee;
+$color-transparent: rgba(255, 255, 255, 0);
+
+$color-default-black-70: rgba($color-default-black, 0.7);
+$color-default-grey-80: rgba($color-default-grey, 0.8);
+$color-default-grey-30: rgba($color-default-grey, 0.3);
+
+$color-dodger-blue: #39A1FF;
+$color-dodger-blue-90: rgba($color-dodger-blue, 0.9);
+
+// VIEWPORTS
+$mobile: 430px;
+$tablet: 768px;
+$desktop: 1024px;
+

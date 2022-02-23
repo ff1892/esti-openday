@@ -1,6 +1,4 @@
 mixin point(text, image)
   li.points__list-item.point
-    .point__container
-      p.point__icon-container
-        +icon(image, 32, 32).point__icon
-      p.point__text= text
+    +icon(image, 32, 32).point__icon
+    p.point__text= text

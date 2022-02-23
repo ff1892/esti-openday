@@ -1,0 +1,46 @@
+.header {
+  background-color: $color-default-grey-30;
+}
+
+.header__container {
+
+  padding-left: 40px;
+  padding-bottom: 10px;
+
+  @include desktop {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__home {
+  display: block;
+  padding: 20px 0 10px;
+  font-weight: bold;
+}
+
+.header__nav {
+  @include desktop {
+    margin-right: 80px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.header__nav-link {
+  display: block;
+  padding: 8px 0;
+
+  &:hover {
+    color: $color-default-black-70;
+  }
+
+  @include desktop {
+
+    &:not(:first-child) {
+      margin-left: 40px;
+    }
+  }
+}

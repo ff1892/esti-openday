@@ -2,14 +2,12 @@
 
 mixin enroll()
   section.main__enroll.enroll#enroll
-    h2.enroll__title Записаться на день открытых дверей
-    p.enroll__text
-     | Оставьте свою электронную почту, чтобы не забыть про день открытых дверей. <br>
-     | За день мероприятия мы пришлём напоминание. <br>
-    .enroll__form-container
-      iframe.enroll__form(
-        src= iframeSource
-        frameborder="0"
-        height="558"
-        width="700"
-      ) Загрузка&hellip;
+    .container.enroll__container
+      h2.enroll__title Записаться на день открытых дверей
+      .enroll__text-container
+        p.enroll__text Оставьте свою электронную почту, чтобы не забыть про день открытых дверей.
+        p.enroll__text  За день мероприятия мы пришлём напоминание.
+      .enroll__form-container
+        iframe.enroll__form(
+          src= iframeSource
+        ) Загрузка&hellip;

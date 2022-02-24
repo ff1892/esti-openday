@@ -2,5 +2,5 @@
 
 mixin event(time, description)
   li.event__item.event
-    time.event__time(datetime=`${day}T${time}`)= time
-    p.event__description= description
+    time.event__time(datetime=`${day}T${time}`) <b>#{time}</b>
+    p.event__description !{description}

@@ -16,11 +16,15 @@ $color-default-grey-80: rgba($color-default-grey, 0.8);
 $color-default-grey-30: rgba($color-default-grey, 0.3);
 
 $color-dark-grey: #414042;
-$color-dodger-blue: #39A1FF;
+$color-dodger-blue: #3399f3;
 $color-dodger-blue-90: rgba($color-dodger-blue, 0.9);
 
 // VIEWPORTS
 $mobile: 430px;
 $tablet: 768px;
 $desktop: 960px;
+
+// URL
+$base-url: '';
+// $base-url: '/netcat_files/userfiles/';
 

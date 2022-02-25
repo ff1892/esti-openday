@@ -1,5 +1,5 @@
 .showcase {
-  background: rgba(0, 0, 0, 0.3) url(../img/msu-mobile.jpg);
+  background: rgba(0, 0, 0, 0.3) url($base-url + '/img/msu-mobile.jpg');
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-position: center center;
@@ -7,7 +7,7 @@
   padding-bottom: 40px;
 
   @include desktop {
-    background-image: rgba(0, 0, 0, 0.3) url(../img/msu-desktop.jpg);
+    background-image: rgba(0, 0, 0, 0.3) url($base-url + '/img/msu-mobile.jpg');
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-position: center center;
@@ -73,8 +73,9 @@
 }
 
 .showcase__link-exp {
-  font-size: 10px;
-  line-height: 10px;
+  padding-top: 5px;
+  font-size: 12px;
+  line-height: 12px;
   display: block;
   font-weight: normal;
   text-transform: lowercase;

@@ -11,9 +11,19 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .speaker {
+  max-width: 350px;
   text-align: center;
   padding: 15px 10px;
   margin-bottom: 20px;

@@ -4,6 +4,10 @@
 
 .events__title {
   margin-bottom: 30px;
+
+  @include desktop {
+    margin-bottom: 45px;
+  }
 }
 
 .events__list {
@@ -21,6 +25,10 @@
     width: 6px;
     height: 100%;
     background-color: $color-dodger-blue;
+  }
+
+   @include desktop {
+    margin-left: 20px;
   }
 }
 
@@ -46,6 +54,10 @@
     height: 18px;
     background-color: $color-dodger-blue;
     border-radius: 50%;
+  }
+
+  @include desktop {
+    margin-bottom: 30px;
   }
 }
 

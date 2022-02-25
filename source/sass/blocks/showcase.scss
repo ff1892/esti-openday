@@ -5,6 +5,14 @@
   background-position: center center;
   background-size: cover;
   padding-bottom: 40px;
+
+  @include desktop {
+    background-image: rgba(0, 0, 0, 0.3) url(../img/msu-desktop.jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
 .showcase__container {
@@ -15,25 +23,59 @@
 .showcase__organization {
   margin: 0;
   padding-top: 20px;
+
+  @include desktop {
+    padding-top: 50px;
+    margin-bottom: 40px;
+  }
 }
 
 .showcase__title {
   line-height: 38px;
   margin-bottom: 40px;
+
+  @include desktop {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 70px;
+  }
+}
+
+.showcase__links-container  {
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+  }
 }
 
 .showcase__link {
   display: block;
-  margin-bottom: 15px;
+  margin: 0 auto 15px auto;
   background-color: $color-dodger-blue;
   padding: 15px 0;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
   color: white;
-  border-radius: 20px;
+  border-radius: 10px;
+  max-width: 400px;
 
   &:hover {
     background-color: $color-dodger-blue-90;
   }
+
+  @include desktop {
+    min-width: 300px;
+    margin: 0 0 15px 0;
+  }
+}
+
+.showcase__link-exp {
+  font-size: 10px;
+  line-height: 10px;
+  display: block;
+  font-weight: normal;
+  text-transform: lowercase;
 }

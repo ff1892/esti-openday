@@ -5,6 +5,11 @@
   padding: 20px 0 30px;
   color: $color-default-white;
   background-color: $color-dark-grey;
+
+  @include desktop {
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
 
 .footer__socials {
@@ -19,6 +24,11 @@
 
     &:hover {
       opacity: 0.8;
+    }
+
+    @include desktop {
+    width: 40px;
+    height: 40px;
     }
   }
 }

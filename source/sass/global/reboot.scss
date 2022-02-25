@@ -24,6 +24,11 @@ html {
   text-rendering: optimizeLegibility;
   // если по прежнему есть проблемы с выравниванием
   // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
+
+  @include desktop {
+    font-size: $fz-default-desktop;
+    line-height: 25px;
+  }
 }
 
 body {

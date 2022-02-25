@@ -1,6 +1,6 @@
 mixin speaker(image, name, position)
   li.speakers__list-item.speaker
     .speaker__container
-      img.speaker__image(src=`img/speakers/${image}.jpg` alt=position)
+      img.speaker__image(src=`img/speakers/${image}.jpg` alt=position width="150" height="150")
       h3.speaker__name !{name}
       p.speaker__position= position

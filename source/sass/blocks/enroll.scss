@@ -1,5 +1,9 @@
 .enroll {
   margin-bottom: 40px;
+
+  @include desktop {
+    padding-top: 10px;
+  }
 }
 
 .enroll__text-container {
@@ -13,5 +17,10 @@
 .enroll__form {
   margin: 0 auto;
   height: 400px;
+  height: 670px;
   width: 100%;
+
+  @include desktop {
+    border: none;
+  }
 }

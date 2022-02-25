@@ -19,6 +19,10 @@
   height: 40px;
   margin-right: 15px;
   margin-top: 5px;
+
+  @include desktop {
+    margin-top: 0;
+  }
 }
 
 .point__text {

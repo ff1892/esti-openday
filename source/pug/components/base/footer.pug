@@ -1,4 +1,29 @@
+-
+  const socials = [
+    {
+      name: 'vk',
+      link: 'https://vk.com/estimsu',
+      aria: 'ссылка на аккаунт вконтакте',
+    },
+    {
+      name: 'fb',
+      link: 'https://facebook.com/estimsu/',
+      aria: 'ссылка на аккаунт фейсбук',
+    },
+    {
+      name: 'inst',
+      link: 'https://www.instagram.com/esti_msu/',
+      aria: 'ссылка на аккаунт инстаграм',
+    }
+  ]
+
 mixin footer()
   footer.footer.page__footer
-    p.footer__text Высшая школа перевода (факультет) <br> <a href="https://www.msu.ru/" target="_blank">МГУ имени М.В. Ломоносова
+    .footer__socials
+      each social in socials
+        a.footer__socials-link(href=social.link, aria-label=social.aria, target="_blank")
+          +icon(social.name, width=40, height=40)
+    p.footer__text Высшая школа перевода
+    a.footer__text-link(href="https://www.msu.ru/" target="_blank") МГУ имени М.В. Ломоносова
+    p.footer__copyright 2022
 
